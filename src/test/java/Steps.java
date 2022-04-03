@@ -39,12 +39,6 @@ public class Steps {
         pageMain.scrollAllPage();
     }
 
-
-//    public void checkVisibleMostViewed(){
-//        boolean checkVisibleMostViewed = pageMain.getMostViewed();
-//        Assert.assertTrue(checkVisibleMostViewed);
-//    }
-
     public void clickButton() {
         pageMain.clickButtons(0);
         pageMain.clickButtons(1);
@@ -81,10 +75,6 @@ public class Steps {
         Assert.assertEquals(str_1, str_2);
     }
 
-//    public String getTextNameInBasket(){
-//        return basket.getNameInBasket().getText();
-//    }
-
     public String getTextPriceSale(){
         return basket.getPriceSale().getText().replace("¤", " ");
     }
@@ -92,14 +82,6 @@ public class Steps {
     public String getTextPriceOrder(){
         return basket.getPriceOrder().getText().replace("¤", " ");
     }
-
-//    public String getTextPriceFirstGoodOfDay(){
-//        return pageMain.getPriceFirstGoodOfDay().getText();
-//    }
-//
-//    public String getTextNameFirstGoodOfDay(){
-//        return  pageMain.getNameFirstGoodOfDay().getText();
-//    }
 
     public int getPriceSaleInt_1(int i){
         return basket.getPriceSaleInt(i);

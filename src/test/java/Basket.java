@@ -20,7 +20,6 @@ public class Basket {
     PageMain pageMain = new PageMain();
 
     @FindBy(xpath = "//div/span[contains(@class, 'c-header-checkout__logo')] [text() = 'Моя корзина']")
-            //"//div/h2[contains(@class, 'cart-header__title')] [text() = 'Моя корзина']")
     private SelenideElement headerTitleBasket;
 
     @FindBy(xpath = "//div[contains(@class, 'c-cart-item__wrapper')]")
@@ -30,7 +29,6 @@ public class Basket {
     private SelenideElement buttonGoToRegistration;
 
     @FindBy(xpath = "//div[contains(@class, 'c-orders-list__content')]//span[contains(@class, 'c-cost-line__title')]")
-            ///"//div[contains(@class, 'c-cost-line__title-wrap')]")
     private SelenideElement stringInBasketCountGoods;
 
     private SelenideElement nameInBasket = $(By.xpath("//div[contains(@class, 'c-cart-item__header')]/a[contains(@class, 'c-link')]"));
